@@ -10,7 +10,7 @@
   <header>
     <h1>Plato</h1>
     <nav>
-      <a href="index.html">Back to Recent Activity</a>
+      <a href="index.html">Recent Activity</a>
     </nav>
   </header>
 
@@ -21,13 +21,14 @@
       <input type="text" id="book-title" required>
 
       <label for="rating">Rating</label>
-      <select id="rating" required>
-        <option value="1">1 Star</option>
-        <option value="2">2 Stars</option>
-        <option value="3">3 Stars</option>
-        <option value="4">4 Stars</option>
-        <option value="5">5 Stars</option>
-      </select>
+      <div class="star-rating">
+        <span data-value="1">☆</span>
+        <span data-value="2">☆</span>
+        <span data-value="3">☆</span>
+        <span data-value="4">☆</span>
+        <span data-value="5">☆</span>
+      </div>
+      <input type="hidden" id="rating" name="rating" required>
 
       <label for="review-text">Review</label>
       <textarea id="review-text" rows="5" required></textarea>

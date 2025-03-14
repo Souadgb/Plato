@@ -19,6 +19,28 @@ function displayReviews() {
   });
 }
 
+// Function to handle star rating selection
+function setupStarRating() {
+  const stars = document.querySelectorAll('.star-rating span');
+  const ratingInput = document.getElementById('rating');
+
+  stars.forEach((star) => {
+    star.addEventListener('click', () => {
+      const value = star.getAttribute('data-value');
+      ratingInput.value = value;
+
+      // Highlight selected stars
+      stars.forEach((s, i) => {
+        if (i < value) {
+          s.classList.add('active');
+        } else {
+          s.classList.remove('active');
+        }
+      });
+    });
+  });
+}
+
 // Function to add a new review
 function addReview(event) {
   event.preventDefault();
@@ -55,5 +77,6 @@ window.onload = () => {
     displayReviews();
   } else if (window.location.pathname.endsWith('review.html')) {
     document.getElementById('review-form').addEventListener('submit', addReview);
+    setupStarRating(); // Initialize star rating functionality
   }
 };
