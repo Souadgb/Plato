@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plato - Add a Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Plato</h1>
+    <nav>
+      <a href="index.html">Back to Recent Activity</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Add a Review</h2>
+    <form id="review-form">
+      <label for="book-title">Book Title</label>
+      <input type="text" id="book-title" required>
+
+      <label for="rating">Rating</label>
+      <select id="rating" required>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+
+      <label for="review-text">Review</label>
+      <textarea id="review-text" rows="5" required></textarea>
+
+      <button type="submit">Post Review</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
