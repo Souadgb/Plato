@@ -1,0 +1,1 @@
+Plato is a sleek, easy-to-use platform for rating and reviewing books. Think Letterboxd, but for books! Rate with stars, share your thoughts, and see what others are reading—all in a clean, minimalist design. Perfect for book lovers who want to track their reads and discover new favorites.
